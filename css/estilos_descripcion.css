@@ -1,0 +1,170 @@
+section 
+{
+    background-color: #E0DCCC;
+    padding: 20px 0;
+}
+
+
+body 
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header 
+{
+    background-color: #594b3e;
+    color: #E0DCCC;
+}
+
+.card 
+{
+    background-color: #fff;
+    border: 1px solid #bebebe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-left: 6%;
+}
+
+footer 
+{
+    background-color: #594b3e;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.logo
+{
+    position:absolute;    
+    display: inline-block;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    animation: shake 0.3s ease-in-out; /* Duración y tipo de animación */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+
+.negocio 
+{
+    margin-left: 70px;
+    margin-bottom: 0%;
+    position: relative;
+    font-size: 2.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fuente */
+    color: #A3A65D;
+    cursor:default;
+    transition: 0.5s;
+}
+
+
+/* Estilo personalizado para los enlaces dentro del header */
+header .navbar-nav .nav-link {
+    color: #fff; /* Cambia el color del texto de los enlaces a blanco */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+/* Estilo cuando se pasa el cursor sobre el enlace */
+header .navbar-nav .nav-link:hover {
+    color: #9E8064; /* Cambia el color del texto a #9E8064 cuando se pasa el cursor */
+}
+
+/* Estilo para los íconos en los enlaces */
+header .navbar-nav .nav-link img {
+    margin-right: 8px; /* Añade un margen a la derecha para separar el ícono del texto */
+}
+
+.btn
+{
+    background-color: #A3A65D;
+    transition: 0.5s;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.btn:hover
+{
+    background-color: #557346;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.card-img-top
+{
+    width: 350px;
+    border-radius: 5%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Descripción en tabla */
+.descripcion table {
+    width: 100%;
+    background-color: #ededed;
+    border-collapse: collapse;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.descripcion td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.descripcion th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #A3A65D;
+    color: #fff;
+    text-align: center;
+}
+
+/* Botones */
+.botones .btn {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.botones .btn-primary {
+    background-color: #557346;
+    border: none;
+}
+
+.botones .btn-primary:disabled {
+    background-color: #9E8064;
+}
+
+.botones .btn-success {
+    background-color: #A3A65D;
+    border: none;
+}
+
+.botones .btn-success:disabled {
+    background-color: #bebebe;
+}

@@ -1,0 +1,261 @@
+/* Estilos generales */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Estilos del header */
+header {
+  background-color: #594b3e;
+  color: #E0DCCC;
+}
+
+/* Estilos para el logo */
+.logo {
+  position: absolute;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  animation: shake 0.2s ease-in-out; /* Duración y tipo de animación */
+  animation-iteration-count: infinite;
+}
+
+/* Animación del logo */
+@keyframes shake {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(-5deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+/* Estilos del título del negocio */
+.negocio {
+  margin-left: 70px;
+  margin-bottom: 0%;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fuente */
+  color: #A3A65D;
+  cursor: default;
+  transition: 0.5s;
+}
+
+.negocio:hover {
+  color: #A3A65D;
+}
+
+/* Estilo personalizado para los enlaces dentro del header */
+header .navbar-nav .nav-link {
+  color: #fff; /* Cambia el color del texto de los enlaces a blanco */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+/* Estilo cuando se pasa el cursor sobre el enlace */
+header .navbar-nav .nav-link:hover {
+  color: #9E8064; /* Cambia el color del texto a #9E8064 cuando se pasa el cursor */
+}
+
+/* Estilo para los íconos en los enlaces */
+header .navbar-nav .nav-link img {
+  margin-right: 8px; /* Añade un margen a la derecha para separar el ícono del texto */
+}
+
+/* Estilos del botón */
+.btn {
+  background-color: #A3A65D;
+  transition: 0.5s;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #557346;
+  color: #fff;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #594b3e;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Estilo para la sección del carrito */
+section {
+  background-color: #E0DCCC;
+  padding: 20px 0;
+}
+
+.card {
+  margin-left: 6%;
+}
+
+/* Estilos de la tabla del carrito */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para los botones de eliminación */
+.delete-button {
+  background-color: #f44336;
+}
+
+/* Estilos para el contenedor y el formulario de contacto */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Ajusta el ancho según sea necesario */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para los botones de añadir y eliminar */
+.add-button,
+.delete-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover,
+.delete-button:hover {
+  background-color: #3e8e41;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+/* Estilos para la sección de totales */
+.totales {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.totales .text-left {
+  text-align: left;
+}
+
+.totales .text-end {
+  text-align: right;
+}
+
+.totales table {
+  width: auto;
+  margin-right: 20px;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+/* Estilo de la tabla con el total y el IVA */
+.table-totales {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.table-totales th, .table-totales td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.table-totales th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table-totales td {
+  font-size: 1.1rem;
+}
+
+.table-totales .totales-info {
+  font-weight: bold;
+}
+
+.table-totales .btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Estilos del contenedor de la tabla y los botones */
+#contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* // Estilos adicionales para los elementos dentro de la tabla */
+th {
+  text-align: center;
+}
